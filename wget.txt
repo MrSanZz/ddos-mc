@@ -1,0 +1,5 @@
+GET /index.html HTTP/1.1
+Host: www.example.com
+User-Agent: Botnet [Version 1.2.3; Platform: x86_64-android-linux-gnu; OS: Linux; Device: LGG3V]
+Connection: close
+Cookie: _ga=GA1.2.659022820.1652120676.16954
