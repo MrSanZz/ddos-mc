@@ -15,7 +15,8 @@ parser.add_argument('-vpt', type=str, help='PORT')
 parser.add_argument('-thd', type=str, help='Threads')
 # Mendapatkan argumen dari baris perintah
 args = parser.parse_args()
-threds = {args.thd}
+thres = {args.thd}
+threds = int(thres)
 # Menggunakan argumen yang diberikan
 def boomb():
     try:
