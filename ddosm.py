@@ -15,14 +15,13 @@ parser.add_argument('-vpt', type=str, help='PORT')
 parser.add_argument('-thd', type=str, help='Threads')
 # Mendapatkan argumen dari baris perintah
 args = parser.parse_args()
-
+threds = {args.thd}
 # Menggunakan argumen yang diberikan
 def boomb():
     try:
         if args.vct is not None and args.vpt is not None:
             a2 = {args.vct}
             a1 = {args.vpt}
-            threds = {args.thd}
         def main():
             Thread = threading.Thread(a2)
             server_ip = a2
