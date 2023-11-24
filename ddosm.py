@@ -57,15 +57,16 @@ def boomb():
                     t.join()
 
                  # Display a success message when all threads have finished running before exiting.
-    while True:
-        r = '\033[1;91m'
-        g = '\033[1;32m'
-        b = '\033[1;34m'
-        list_warna = r, g, b
-        warna = random.choice(list_warna)
-        print(warna + f"[ + ] Info = Botnet Just Sending Nuke To Servers [ + ]")
+        while True:
+            r = '\033[1;91m'
+            g = '\033[1;32m'
+            b = '\033[1;34m'
+            list_warna = r, g, b
+            warna = random.choice(list_warna)
+            print(warna + f"[ + ] Info = Botnet Just Sending Nuke To Servers [ + ]")
+    except NameError:
+        print("usage : python3 ddos.py -vct <ip> -vpt <port> -thd <threads>")
+
 for i in range(threds):
     thd = threading.Thread(target=boomb)
     thd.start()
-except NameError:
-    print("usage : python3 ddos.py -vct <ip> -vpt <port>")
